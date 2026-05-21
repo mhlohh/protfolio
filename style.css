@@ -70,7 +70,23 @@ nav .right a:last-child:active{
 nav .right span{
     margin-left: 5px;
 }
+@media(max-width:850px)
+{
+ /*Section 1 headshot tect*/
+ .hero-section .text h2{
+    font-size:35px;
+ }   
+}
 
+@media(max-width:740px)
+{
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+    .hero-section .headshot img{
+        width: 300px;
+    }
+}
 @media (max-width: 600px)
 {   /*Nav bar*/
     nav{
@@ -86,6 +102,14 @@ nav .right span{
     nav .right a:last-child{
         color:var(--text-color);
         background-color: (var(--background-color));
+    }
+
+    .hero-section {
+        padding: 0 20px;
+    }
+
+    .hero-section .text h2{
+        font-size: 30px;
     }
 }
 
@@ -108,6 +132,8 @@ nav .right span{
 }
 .hero-section .headshot{
     flex: 2;
+    display: flex;
+    justify-content: flex-end;
 }
 .hero-section .text .links{
     margin-top: 25px;
@@ -129,6 +155,8 @@ nav .right span{
 }
 
 
-.hero-section .headshot .img{
-    border-radius: 50px;
+.hero-section .headshot img{
+   width: 350px;
+   border-radius: 50%;
 }
+
