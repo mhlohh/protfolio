@@ -83,11 +83,17 @@ nav .right span{
 }
 
 .hero-section .text{
-    flex: 5;
-    
+    flex: 5;   
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+.hero-section .text span{
+    font-weight: 600;
 }
 .hero-section .text h2{
     font-size: 45px ;
+    padding-bottom: 20px;
 }
 .hero-section .headshot{
     flex: 2;
@@ -135,6 +141,11 @@ nav .right span{
 .skills-section .text{
     text-align: center;
     margin-top: 20px;
+    line-height: 30px;
+}
+
+.skills-section .text span{
+    font-weight: 600;
 }
 
 .skills-section .cells{
@@ -153,12 +164,11 @@ nav .right span{
     border-radius: 5px;
     margin: 10px;
     gap: 10px;
-    transition: border-width 0.8s ease, border-color 0.8s ease, font-weight 0.8s ease;
+    transition: box-shadow 0.8s ease,font-weight 0.8s ease;
 }
 
 .skills-section .cells .cell:hover{
-     border-width: 2px;
-    border-color: black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     font-weight: bold;
 }
 
@@ -183,14 +193,16 @@ nav .right span{
 }
 .projects-section .projects{
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
+
 }
+
 .projects-section .projects .project{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    justify-content: center;
+    gap: 10px;
+    justify-content: space-between;
     padding: 10px 20px;
     border: 1.5px solid #d3d3d3 ;
     border-radius: 10px;
@@ -201,13 +213,26 @@ nav .right span{
     max-height: 1000px;
     color: var(--text-color)
 }
-
 .projects-section .projects .project:hover{
-        border-width: 5px;
-        border-color: black;
-        color: var(--link-color)
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+.projects-section .projects .project a{
+    justify-items: end;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    margin-top: auto;
+}
+
+.projects-section .projects .project a:hover{
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
 /*Section Contact*/
 
 .contacts-section{
@@ -228,7 +253,7 @@ nav .right span{
      align-items: center;
      gap: 30px;
      flex-wrap: wrap;
-     mae
+     
 }
 
 .contacts-section .container a{
