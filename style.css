@@ -17,8 +17,6 @@ html{
 body{
     font-family: 'Poppins',sans-serif;
     background-color: var(--background-color);
-    max-width: 1400px;
-    margin: 0 auto;
 }
 
 a{
