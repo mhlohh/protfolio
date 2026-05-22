@@ -197,11 +197,14 @@ nav .right span{
     gap: 10px;
     max-width: 500px;
     transition: 0.8s;
+    max-height: 1000px;
+    color: var(--text-color)
 }
 
 .projects-section .projects .project:hover{
         border-width: 5px;
         border-color: black;
+        color: var(--link-color)
 }
 
 @media(max-width:850px)
