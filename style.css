@@ -152,8 +152,15 @@ nav .right span{
     border-radius: 5px;
     margin: 10px;
     gap: 10px;
-
+    transition: border-width 0.8s ease, border-color 0.8s ease, font-weight 0.8s ease;
 }
+
+.skills-section .cells .cell:hover{
+     border-width: 2px;
+    border-color: black;
+    font-weight: bold;
+}
+
 .skills-section .cells .cell img{
     width: 50px;
     height: 50px;
@@ -171,7 +178,7 @@ nav .right span{
     display: flex;
     padding: 0 50px;
     margin-bottom: 90px;
-    margin-top: 150px;
+    margin-top: 230px;
 }
 .projects-section .projects{
     display: flex;
@@ -185,13 +192,17 @@ nav .right span{
     justify-content: center;
     padding: 10px 20px;
     border: 1.5px solid #d3d3d3 ;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 10px;
     gap: 10px;
-    
-    
+    max-width: 500px;
+    transition: 0.8s;
 }
 
+.projects-section .projects .project:hover{
+        border-width: 5px;
+        border-color: black;
+}
 
 @media(max-width:850px)
 {
