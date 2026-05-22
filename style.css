@@ -17,6 +17,8 @@ html{
 body{
     font-family: 'Poppins',sans-serif;
     background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 a{
@@ -207,6 +209,55 @@ nav .right span{
         color: var(--link-color)
 }
 
+/*Section Contact*/
+
+.contacts-section{
+    padding:0 50px;
+    margin-bottom: 250px;
+    margin-top: 250px;
+}
+.contacts-section h2{
+    font-size: 35px;
+}
+
+.contacts-section .group{
+    display: flex;
+    gap:50px;
+}
+
+.contacts-section .group .text{
+    flex: 3;
+    margin-top: 20px;
+}
+.contacts-section .group form{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+.contacts-section .group form input,
+.contacts-section .group form textarea{
+    font-family: 'Poppins',sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 50px;
+    outline: none;
+    resize: none;
+}
+
+.contacts-section .group form button{
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+    color: var(--background-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contacts-section .group form button:hover{
+    filter:brightness(0.9);
+}
 @media(max-width:850px)
 {
  /*Section 1 headshot tect*/
@@ -223,6 +274,10 @@ nav .right span{
     }
     .hero-section .headshot img{
         width: 300px;
+    }
+    /*contact section*/
+    .contacts-section .group{
+        flex-direction: column;
     }
 }
 @media (max-width: 600px)
@@ -254,5 +309,9 @@ nav .right span{
     /*Skills section*/
     .skills-section .cells .cell span{
         font-size: 16px;
+    }
+    /*contact section*/
+    .contacts-section{
+        padding: 0 20px;
     }
 }
