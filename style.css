@@ -210,7 +210,6 @@ nav .right span{
     gap: 10px;
     max-width: 500px;
     transition: 0.8s;
-    max-height: 1000px;
     color: var(--text-color)
 }
 .projects-section .projects .project:hover{
@@ -330,7 +329,10 @@ nav .right span{
     }
     /*Project Section*/
     .projects-section{
-        padding: 0 2px;
+        padding: 0 5px;
+    }
+    .projects-section .projects .project{
+        max-width: 420px;
     }
     /*Skills section*/
     .skills-section .cells .cell span{
