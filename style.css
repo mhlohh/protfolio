@@ -329,10 +329,10 @@ nav .right span{
     }
     /*Project Section*/
     .projects-section{
-        padding: 0 5px;
+        padding: 0 2px;
     }
     .projects-section .projects .project{
-        max-width: 420px;
+        max-width: 370px;
     }
     /*Skills section*/
     .skills-section .cells .cell span{
