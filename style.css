@@ -298,6 +298,14 @@ nav .right span{
     .hero-section .headshot img{
         width: 300px;
     }
+
+    /*Project Section*/
+     .projects-section{
+        padding: 0 10px;
+    }
+    .projects-section .projects .project{
+        max-width: 430px;
+    }
     /*contact section*/
   
 }
