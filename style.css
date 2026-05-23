@@ -306,6 +306,10 @@ nav .right span{
     .projects-section .projects .project{
         max-width: 430px;
     }
+    .projects-section .projects .project .certificate{
+        object-fit: contain;
+        border-radius: 12px;
+    }
     /*contact section*/
   
 }
@@ -341,6 +345,11 @@ nav .right span{
     }
     .projects-section .projects .project{
         max-width: 370px;
+    }
+
+     .projects-section .projects .project .certificate{
+        object-fit: contain;
+        border-radius: 5px;
     }
     /*Skills section*/
     .skills-section .cells .cell span{
