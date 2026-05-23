@@ -233,6 +233,14 @@ nav .right span{
     border-color: var(--text-color);
     color: var(--text-color);
 }
+
+.projects-section .projects .project img{
+    border-radius: 12px;
+}
+
+.projects-section .projects .project .certificate{
+    height: 300px;
+}
 /*Section Contact*/
 
 .contacts-section{
@@ -319,6 +327,10 @@ nav .right span{
 
     .hero-section .text h2{
         font-size: 30px;
+    }
+    /*Project Section*/
+    .projects-section{
+        padding: 0 15px;
     }
     /*Skills section*/
     .skills-section .cells .cell span{
